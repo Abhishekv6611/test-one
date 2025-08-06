@@ -572,16 +572,16 @@ const AdminDashboard = ({ user, onLogout, onCreateLead, onCreateCustomer }: Admi
         {/* Leads Information Cards */}
         <div className="mb-8">
           <h3 className="text-xl font-semibold text-gray-900 mb-4">Leads Overview</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            <Card className="bg-white backdrop-blur-sm border-indigo-500/30 cursor-pointer" onClick={() => handleCardClick("leads", "total")}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 ">
+            <Card className="bg-white backdrop-blur-sm border-indigo-500/80 cursor-pointer" onClick={() => handleCardClick("leads", "total")}>
               <CardContent className="p-6">
-                <div className="flex items-center">
-                  <div className="p-2 bg-indigo-600/20 rounded-lg">
+                <div className="flex items-center  ">
+                  <div className="p-2 bg-indigo-600/10 rounded-lg">
                     <Users className="h-6 w-6 text-indigo-400" />
                   </div>
-                  <div className="ml-4">
-                    <p className="text-2xl font-bold text-gray-900">{leadsData.totalLeads}</p>
-                    <p className="text-sm text-gray-600">Total Leads</p>
+                  <div className="ml-4 ">
+                    <p className="text-2xl font-bold text-blue-900">{leadsData.totalLeads}</p>
+                    <p className="text-sm text-indigo-600">Total Leads</p>
                   </div>
                 </div>
               </CardContent>
