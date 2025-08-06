@@ -89,24 +89,15 @@ const initialState: IndustryState = {
 //   description: string[];
 //   customFields: CustomField[];
 // }
-// interface CustomField {
-//   id: string;
-//   field_name: string;
-//   mandatory: boolean;
-//   field_type: 'string' | 'digit' | 'password' | 'selection';
-//   options: string[];
-// }
+interface CustomField {
+  id: string;
+  field_name: string;
+  mandatory: boolean;
+  field_type: 'string' | 'digit' | 'password' | 'selection';
+  options: string[];
+}
 
-// export interface ServiceCreatePayload {
-//   service_name: string;
-//   category: string;
-//   payment_type: string;
-//   price?: number;
-//   monthly_cost?: number;
-//   yearly_cost?: number;
-//   description: string[];
-//   custom_fields: CustomField[];
-// }
+
 export interface ServiceCreatePayload {
   name: string;
   category_id: number; // changed from string to number
@@ -114,7 +105,6 @@ export interface ServiceCreatePayload {
   one_time_cost?: string; // changed to string
   monthly_cost?: string;
   yearly_cost?: string;
-  features: string[];
   custom_fields: Array<{
     field_name: string;
     field_type: 'string' | 'digit' | 'password' | 'select';
