@@ -159,7 +159,7 @@ const LeadsPage = () => {
                   alt="CloudHouse Technologies" 
                   className="h-8 w-auto mr-3"
                 />
-                <h1 className="text-xl font-semibold text-white">Leads Management</h1>
+                <h1 className="text-xl font-semibold text-white">Leads Management </h1>
               </div>
             </div>
           </div>
@@ -170,12 +170,12 @@ const LeadsPage = () => {
             <div className="flex justify-between items-start mb-6">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">All Leads</h2>
-                <p className="text-gray-600">Manage and track all your business leads</p>
+                <p className="text-gray-600">Manage and track all  business leads</p>
               </div>
               <div className="flex items-center space-x-4">
                 <Button 
                   onClick={() => navigate('/leads/create')}
-                  className="bg-blue-600 hover:bg-blue-700"
+                  className="bg-blue-600 hover:bg-green-700"
                 >
                   <Plus className="h-4 w-4 mr-2" />
                   Create New Lead
