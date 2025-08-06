@@ -183,7 +183,7 @@ const CreateLeadPage = () => {
                             <SelectContent>
                               {mockProducts.map((product) => (
                                 
-                                <SelectItem key={product.id} value={product}>
+                                <SelectItem key={product} value={product}>
                                   {product}
                                 </SelectItem>
                               ))}
