@@ -51,15 +51,6 @@ const AddCustomerPage = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-  // Basic validation
-  // if (!formData.companyName || !formData.contactPersonName || !formData.email || !formData.industryId) {
-  //   toast({
-  //     title: "Error",
-  //     description: "Please fill in all required fields",
-  //     variant: "destructive",
-  //   });
-  //   return;
-  // }
 
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(formData.email)) {
