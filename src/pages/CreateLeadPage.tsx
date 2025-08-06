@@ -50,26 +50,21 @@ const mockProducts = [
 
 const mockReporters = [
   'John Doe - Sales Manager',
-  'Jane Smith - Business Development',
   'Mike Johnson - Account Executive',
   'Sarah Wilson - Lead Developer',
   'Tom Brown - Project Manager'
 ];
 
 const mockProjects = [
-  'E-commerce Platform Redesign',
   'Mobile App Development',
   'CRM System Integration',
-  'Website Modernization',
   'Data Analytics Dashboard',
   'Custom Software Solution'
 ];
 
 const mockMiddleMen = [
-  'Robert Johnson - Marketing Lead',
   'Lisa Chen - Business Consultant',
   'David Miller - Sales Representative',
-  'Emma Wilson - Account Manager',
   'James Brown - Partnership Manager'
 ];
 
@@ -109,8 +104,8 @@ const CreateLeadPage = () => {
 
   return (
     <ThemeProvider>
-      <div className="min-h-screen bg-white">
-        <header className="bg-gradient-to-br from-gray-900 via-purple-900 to-blue-900 shadow-xl border-b border-purple-500/30">
+      <div className="min-h-screen bg-gray-500">
+        <header className="bg-gradient-to-br from-blue-900 via-purple-900 to-blue-900 shadow-xl border-b border-purple-500/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center">
