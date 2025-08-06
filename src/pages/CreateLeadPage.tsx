@@ -120,8 +120,12 @@ const CreateLeadPage = () => {
                   className="text-white hover:bg-white/10 mr-4"
                 >
                   <ArrowLeft className="h-4 w-4 mr-2" />
-                  Back to Leads
+                  Back to Lead
                 </Button>
+
+
+
+
                 <img 
                   src="/lovable-uploads/518f19f5-443d-435c-a6c8-889da6f424d4.png" 
                   alt="CloudHouse Technologies" 
@@ -183,7 +187,8 @@ const CreateLeadPage = () => {
                             </FormControl>
                             <SelectContent>
                               {mockProducts.map((product) => (
-                                <SelectItem key={product} value={product}>
+                                
+                                <SelectItem key={product.id} value={product}>
                                   {product}
                                 </SelectItem>
                               ))}
