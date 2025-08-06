@@ -202,7 +202,7 @@ const mockAllTickets: Ticket[] = [
   }
 ];
 
-const AdminDashboard = ({ user, onLogout, onCreateLead, onCreateCustomer }: AdminDashboardProps) => {
+const   AdminDashboard = ({ user, onLogout, onCreateLead, onCreateCustomer }: AdminDashboardProps) => {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [tickets] = useState<Ticket[]>(mockAllTickets);
   const [ticketFilter, setTicketFilter] = useState<null | {
@@ -579,9 +579,13 @@ const AdminDashboard = ({ user, onLogout, onCreateLead, onCreateCustomer }: Admi
                   <div className="p-2 bg-indigo-600/10 rounded-lg">
                     <Users className="h-6 w-6 text-indigo-400" />
                   </div>
-                  <div className="ml-4 ">
-                    <p className="text-2xl font-bold text-blue-900">{leadsData.totalLeads}</p>
-                    <p className="text-sm text-indigo-600">Total Leads!</p>
+                  <div className="ml-4">
+                    <p className="text-2xl font-bold text-gray-900">{leadsData.totalLeads}</p>
+                    <p className="text-sm text-gray-700">Total Leads</p>
+
+
+
+                    
                   </div>
                 </div>
               </CardContent>
