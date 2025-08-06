@@ -56,6 +56,10 @@ const initialState: IndustryState = {
   error: null,
   leads: [], 
 };
+// interface ServiceCreatePayload {
+//   service_name: string;
+//   category: string;
+//   paymentType: string;   
 
 
 // const initialState: IndustryState = {
@@ -117,6 +121,15 @@ export interface ServiceCreatePayload {
 
 
 
+
+
+
+
+
+
+
+
+
 // Fetch all industries
 export const fetchIndustries = createAsyncThunk(
   'industries/fetchAll',
@@ -164,6 +177,25 @@ export const createLead = createAsyncThunk(
     return response.data;
   }
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export const getLeads = createAsyncThunk(
   'lead/getLeads',
   async () => {
@@ -202,9 +234,18 @@ const industrySlice = createSlice({
         state.loading = false;
         state.industries.push(action.payload.data || action.payload);
       })
+
+
+
+
+
+
+
+
+
       .addCase(createIndustry.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error.message || 'Failed to create industry';
+        state.error = action.error.message || 'Failed';
       })
 
       // services
