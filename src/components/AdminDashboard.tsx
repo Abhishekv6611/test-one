@@ -581,7 +581,7 @@ const AdminDashboard = ({ user, onLogout, onCreateLead, onCreateCustomer }: Admi
                   </div>
                   <div className="ml-4 ">
                     <p className="text-2xl font-bold text-blue-900">{leadsData.totalLeads}</p>
-                    <p className="text-sm text-indigo-600">Total Leads</p>
+                    <p className="text-sm text-indigo-600">Total Leads!</p>
                   </div>
                 </div>
               </CardContent>
